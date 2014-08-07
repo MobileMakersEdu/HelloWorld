@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.11" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6190.4"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goldImage" translatesAutoresizingMaskIntoConstraints="NO" id="9J8-kO-yn8">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Tp-If-KPm">
+                                <rect key="frame" x="167" y="281" width="267" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="267" id="r8J-Qa-fQB"/>
+                                    <constraint firstAttribute="height" constant="37" id="syb-Em-ku1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9J8-kO-yn8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="4Bz-qR-IDB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9J8-kO-yn8" secondAttribute="bottom" id="8hm-g5-UJq"/>
+                            <constraint firstItem="9J8-kO-yn8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FAZ-C4-Vep"/>
+                            <constraint firstAttribute="centerX" secondItem="5Tp-If-KPm" secondAttribute="centerX" id="GLM-Yj-ht8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5Tp-If-KPm" secondAttribute="bottom" constant="282" id="eJG-ie-mVR"/>
+                            <constraint firstAttribute="trailing" secondItem="9J8-kO-yn8" secondAttribute="trailing" id="hBk-f4-AeV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myLabel" destination="5Tp-If-KPm" id="tnA-ud-ZYR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="goldImage" width="320" height="568"/>
+    </resources>
+</document>
