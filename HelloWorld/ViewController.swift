@@ -12,11 +12,12 @@ class ViewController: UIViewController {
                             
     @IBOutlet weak var myLabel: UILabel!
     var favoriteBand = "The Beatles"
+    var numberOfMembers : Integer = 4
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        myLabel.text = favoriteBand
+        myLabel.text = favoriteBand + " had \(numberOfMembers) members"
     }
 
     override func didReceiveMemoryWarning() {
