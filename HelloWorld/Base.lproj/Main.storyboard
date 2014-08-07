@@ -16,9 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goldImage" translatesAutoresizingMaskIntoConstraints="NO" id="9J8-kO-yn8">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
-                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Tp-If-KPm">
                                 <rect key="frame" x="167" y="281" width="267" height="37"/>
                                 <constraints>
@@ -32,12 +29,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="9J8-kO-yn8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="4Bz-qR-IDB"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9J8-kO-yn8" secondAttribute="bottom" id="8hm-g5-UJq"/>
-                            <constraint firstItem="9J8-kO-yn8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FAZ-C4-Vep"/>
                             <constraint firstAttribute="centerX" secondItem="5Tp-If-KPm" secondAttribute="centerX" id="GLM-Yj-ht8"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5Tp-If-KPm" secondAttribute="bottom" constant="282" id="eJG-ie-mVR"/>
-                            <constraint firstAttribute="trailing" secondItem="9J8-kO-yn8" secondAttribute="trailing" id="hBk-f4-AeV"/>
                         </constraints>
                     </view>
                     <connections>
@@ -48,7 +41,4 @@
             </objects>
         </scene>
     </scenes>
-    <resources>
-        <image name="goldImage" width="320" height="568"/>
-    </resources>
 </document>
